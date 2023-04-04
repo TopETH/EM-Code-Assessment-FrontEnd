@@ -15,8 +15,6 @@ function Badge({ files }: BadgeProps) {
       // remove duplicate file types
       if (arr.indexOf(language) === -1) {
         arr.push(language);
-        arr.push(language);
-        arr.push(language);
       }
     }
     setFileArr(arr);
