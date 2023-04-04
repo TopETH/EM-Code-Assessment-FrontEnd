@@ -1,4 +1,5 @@
 import "styles/global.scss";
+import StateProvider from "state";
 import type { AppProps } from "next/app";
 
 // Export application
@@ -8,6 +9,8 @@ export default function MerkleAirdropStarter({
 }: AppProps) {
   return (
     // Wrap application in global state provider
-    <Component {...pageProps} />
+    <StateProvider>
+      <Component {...pageProps} />
+    </StateProvider>
   );
 }
